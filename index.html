@@ -24,11 +24,12 @@
       --w: 320px;
       --h: 500px;
       --m: 16px;
+      --fs: 11px;
     }
 
     body {
       font-family: 'Outfit', sans-serif;
-      font-size: 11px;
+      font-size: var(--fs);
       background: hsl(212, 45%, 89%);
       display: grid;
       justify-content: center;
@@ -45,7 +46,7 @@
       display: grid;
       grid-template-rows: var(--w) 1fr;
       justify-content: center;
-      box-shadow: 5px 8px 15px 15px #0001;
+      box-shadow: 5px 8px 12px 15px #0001;
     }
 
     .attribution {
@@ -74,6 +75,10 @@
       text-align: center;
       width: calc(100% - 2 * var(--m));
       margin-inline: var(--m);
+    }
+
+    .footer > * {
+      margin-block: calc(var(--m) * 0.8);
     }
 
     .footer .subtitle {
