@@ -14,6 +14,12 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    *, *::after, *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     :root {
       --w: 320px;
       --h: 500px;
@@ -39,6 +45,7 @@
       display: grid;
       grid-template-rows: var(--w) 1fr;
       justify-content: center;
+      box-shadow: 5px 8px 15px 15px #0001;
     }
 
     .attribution {
